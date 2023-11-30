@@ -1,4 +1,4 @@
-package interactions;
+package tests;
 
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Tag;
@@ -9,7 +9,7 @@ import utils.ScreenshotMaker;
 public class DragAndDropTest extends TestBase {
 
     @RepeatedTest(1)
-    @Tag("interactions")
+    @Tag("tests")
     public void dragAndDropBlocks() {
         openWebsite("https://demo.aspnetawesome.com/DragAndDropDemo");
         DragAndDropPage dragAndDropPage = new DragAndDropPage(driver);
