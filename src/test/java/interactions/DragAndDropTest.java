@@ -4,7 +4,7 @@ import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Tag;
 import pages.DragAndDropPage;
 import testbase.TestBase;
-import utils.Screenshot;
+import utils.ScreenshotMaker;
 
 public class DragAndDropTest extends TestBase {
 
@@ -13,10 +13,10 @@ public class DragAndDropTest extends TestBase {
     public void dragAndDropBlocks() {
         openWebsite("https://demo.aspnetawesome.com/DragAndDropDemo");
         DragAndDropPage dragAndDropPage = new DragAndDropPage(driver);
-        Screenshot screenshot = new Screenshot(driver);
+        ScreenshotMaker screenshotMaker = new ScreenshotMaker(driver);
 
         dragAndDropPage.dragAndDropBoxes(actions);
-        screenshot.takeScreenShot();
+        screenshotMaker.takeScreenShot();
 
     }
 

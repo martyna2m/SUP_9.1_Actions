@@ -12,10 +12,10 @@ import java.nio.file.StandardCopyOption;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Screenshot {
+public class ScreenshotMaker {
     private WebDriver driver;
 
-    public Screenshot(WebDriver driver) {
+    public ScreenshotMaker(WebDriver driver) {
         this.driver = driver;
     }
 
@@ -28,7 +28,7 @@ public class Screenshot {
             String fileName = "screenshot_" + timestamp + ".png";
             Path fileLocalization = Path.of("src/test/resources/screenshots/" + fileName);
 
-            Files.copy(screenshotFile.toPath(), fileLocalization, StandardCopyOption.REPLACE_EXISTING);
+            Files.copy(screenshotFile.toPath(), fileLocalization);
 
         } catch (IOException e) {
             e.printStackTrace();
