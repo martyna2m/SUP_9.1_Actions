@@ -40,7 +40,6 @@ public class DragAndDropPage {
         actions.clickAndHold(draggableElement)
                 .moveByOffset(10, 10)
                 .moveToElement(dropZone)
-                .pause(5)
                 .release()
                 .build()
                 .perform();
