@@ -21,6 +21,8 @@ public class DragAndDropPage {
         PageFactory.initElements(driver, this);
     }
 
+
+    //@FindBy(xpath = "//p[contains(text(), 'drag')]/following-sibling::div")
     @FindBy(css = ".dropZone>.ditem")
     private List<WebElement> boxes;
 
