@@ -6,7 +6,7 @@ import pages.DragAndDropPage;
 import testbase.TestBase;
 import utils.Screenshot;
 
-public class dragAndDropTest extends TestBase {
+public class DragAndDropTest extends TestBase {
 
     @RepeatedTest(1)
     @Tag("interactions")
