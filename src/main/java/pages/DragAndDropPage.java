@@ -22,7 +22,6 @@ public class DragAndDropPage {
     }
 
 
-    //@FindBy(xpath = "//p[contains(text(), 'drag')]/following-sibling::div")
     @FindBy(css = ".dropZone>.ditem")
     private List<WebElement> boxes;
 
